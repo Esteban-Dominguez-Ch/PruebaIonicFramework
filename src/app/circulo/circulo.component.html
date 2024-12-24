@@ -1,0 +1,15 @@
+<ion-list lines="none">
+  <ion-img
+    src="assets/img/circulo.jpg"
+    style="width: 50%; height: auto; display: block; margin: 0 auto;"
+  ></ion-img>
+  <ion-item>
+    <ion-input [(ngModel)]="radio" type ="float" label="Radio (Cm)" label-placement="floating" fill="solid" placeholder="x.xx"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">Calcular El Perimetro</ion-button>
+  </ion-item>
+  <ion-item>
+    {{resultado}}
+  </ion-item>
+</ion-list> 

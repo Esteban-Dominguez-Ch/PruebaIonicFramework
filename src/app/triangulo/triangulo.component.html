@@ -1,0 +1,22 @@
+<ion-list lines="none">
+  <ion-img
+    src="assets/img/triangulo.jpg"
+    style="width: 50%; height: auto; display: block; margin: 0 auto;"
+  ></ion-img>
+  <ion-item>
+    <ion-input [(ngModel)]="ladoA" type ="float" label="Lado A (Cm)" label-placement="floating" fill="solid" placeholder="x.xx"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="ladoB" type ="float" label="Lado B (Cm)" label-placement="floating" fill="solid" placeholder="x.xx"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="ladoC" type ="float" label="Lado C (Cm)" label-placement="floating" fill="solid" placeholder="x.xx"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">Calcular El Perimetro</ion-button>
+  </ion-item>
+  <ion-item>
+    {{resultado}}
+  </ion-item>
+</ion-list> 
